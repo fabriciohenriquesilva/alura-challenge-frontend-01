@@ -1,0 +1,128 @@
+:root {
+    --blue-800: #051D3B;
+    --blue-600: #5081FB;
+    --blue-400: #7BA4FC;
+    --blue-200: #96B9FD;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 120px 3fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: var(--blue-800);
+    margin: 0 5%;
+}
+
+/* HEADER */
+
+header {
+    grid-column: 1/4;
+    /* border: 1px solid red; */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.logo {
+    /* width: 228px; */
+    height: 60px;
+    margin: 0 0 0 -1rem;
+}
+
+.barra-pesquisa {
+    width: 752px;
+}
+
+.foto-perfil {
+    width: 150px;
+    margin: 0 -1rem 0 0;
+}
+
+/* ASIDE */
+
+aside {
+    /* border: 1px solid red; */
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    /* padding-left: 1rem; */
+    font-weight: lighter;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    padding: 0.5rem 0;
+
+}
+
+a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+/*  */
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    /* border: 1px solid red; */
+}
+
+/* SECTION */
+
+section {
+    /* border: 1px solid red; */
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.16);
+    border: none;
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 0.875rem;
+    margin-bottom: 1rem;    
+}
+
+input:focus {
+    outline: var(--blue-200) 2px solid;
+}
+
+textarea {
+    height: 112px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 0.875rem;
+    margin-bottom: 1rem;
+}
+
+textarea:focus {
+    outline: var(--blue-200) 2px solid;
+}

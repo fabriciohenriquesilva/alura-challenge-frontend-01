@@ -10,9 +10,12 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="assets/logo.png" alt="AluraDev">
+        <img class="logo" src="assets/aluradev-logo.svg" alt="AluraDev">
         <input class="barra-pesquisa" type="text" name="barra-pesquisa" id="barra-pesquisa" placeholder="Busque por algo">
-        <img class="foto-perfil" src="assets/foto-perfil.png" alt="Foto de Perfil">
+        <div class="user-profile">
+            <img class="foto-perfil" src="assets/profile-pic.jpg" alt="Foto de Perfil">
+            <span>John Wick</span>
+        </div>
     </header>
     <aside>
         <h2>Menu</h2>
@@ -26,6 +29,17 @@
         <h2>Seu Projeto</h2>
         <input type="text" name="nome-projeto" id="nome-projeto" placeholder="Nome do seu projeto">
         <textarea name="descricao-projeto" id="descricao-projeto" cols="30" rows="10" placeholder="Descrição do projeto"></textarea>
+
+        <h2>Personalização</h2>
+        <select name="linguagem" id="linguagem">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+        </select>
+
+        <input type="color" name="color" id="color">
+
+        <button type="submit">Salvar projeto</button>
     </section>
 </body>
 </html>
